@@ -8,7 +8,7 @@ function contadorF(Oracion) {
     let vocales = "aeiouAEIOU";
     let dígitos = "0123456789";
     let numVocales = 0;
-    let numDígitos = 0;
+    let numDigitos = 0;
 
     for (let i = 0; i < Oracion.length; i++) {
         let char = Oracion[i];
@@ -16,7 +16,7 @@ function contadorF(Oracion) {
             numVocales++;
         }
         if (dígitos.includes(char)) {
-            numDígitos++;
+            numDigitos++;
         }
     }
 
@@ -31,7 +31,7 @@ function PedirOracion() {
         } else {
             let resultado = contadorF(Oracion);
             console.log(`Numero de vocales: ${resultado.numVocales}`);
-            console.log(`Numero de dígitos: ${resultado.numDígitos}`);
+            console.log(`Numero de dígitos: ${resultado.numDigitos}`);
             rl.close(); 
         }
     });
